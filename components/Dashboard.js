@@ -11,6 +11,7 @@ import chartImg from "../public/chartImg.png";
 import {
   Chart as ChartJS,
   LineElement,
+  LineController,
   CategoryScale,
   LinearScale,
   PointElement,
@@ -24,6 +25,7 @@ import Image from "next/image";
 ChartJS.register(
   LineElement,
   CategoryScale,
+  LineController,
   LinearScale,
   PointElement,
   Filler,
