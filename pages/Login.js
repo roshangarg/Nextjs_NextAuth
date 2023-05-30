@@ -44,7 +44,7 @@ export default function Login() {
         </div>
         <div className=" h-screen w-full flex items-center justify-center ">
           <div className="m-5">
-            <span className="font-sans1 text-black text-3xl font-bold leading-11 tracking-normal text-left">
+            <span className="font-sans1 text-red-500 text-3xl font-bold leading-11 tracking-normal text-left">
               Sign In
             </span>
             <span className="font-sans text-base font-normal leading-5 tracking-normal text-left text-black block">
