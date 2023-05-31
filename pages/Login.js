@@ -35,43 +35,43 @@ export default function Login() {
   }, [session, router]);
 
   return (
-    <main className="h-screen w-full font-montserrat">
-      <div className="flex">
-        <div className="bg-black  w-60 hidden md:flex  items-center justify-center">
-          <h1 className="font-sans font-bold text-4xl leading-12 text-white">
+    <main class="bg-gray-100 h-screen w-full font-sans1">
+      <div class="flex">
+        <div class="bg-black  w-60 hidden md:flex  items-center justify-center">
+          <h1 class="font-sans font-bold text-4xl leading-12 text-white">
             Board.
           </h1>
         </div>
-        <div className=" h-screen w-full flex items-center justify-center ">
-          <div className="m-5">
-            <span className="font-sans1 text-black text-3xl font-bold leading-11 tracking-normal text-left">
+        <div class=" h-screen w-full flex items-center justify-center ">
+          <div class="m-5">
+            <span class="font-sans1 text-black text-3xl font-bold leading-11 tracking-normal text-left">
               Sign In
             </span>
-            <span className="font-sans text-base font-normal leading-5 tracking-normal text-left text-black block">
+            <span class="font-sans text-base font-normal leading-5 tracking-normal text-left text-black block">
               Sign in to your account
             </span>
-            <div className="flex flex-col items-center mt-4 md:flex-row md:justify-center">
-              <button className="flex-1 md:w-auto m-2" onClick={() => signIn()}>
+            <div class="flex flex-col items-center mt-4 md:flex-row md:justify-center">
+              <button class="flex-1 md:w-auto m-2" onClick={() => signIn()}>
                 <Image
                   src={googleImage}
                   alt="Picture of Google"
-                  className="rounded-lg"
+                  class="rounded-lg"
                 />
               </button>
-              <button className="mt-4 md:mt-0 m-2">
+              <button class="mt-4 md:mt-0 m-2">
                 <Image
                   src={githubImage}
                   alt="Picture of GitHub"
-                  className="rounded-lg"
+                  class="rounded-lg"
                 />
               </button>
             </div>
 
-            <div className="mt-4 bg-white p-4 rounded-xl">
+            <div class="mt-4 bg-white p-4 rounded-xl">
               <form onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="email">
-                    <span className="font-sans text-black font-normal leading-5 tracking-normal text-left block">
+                    <span class="font-sans text-black font-normal leading-5 tracking-normal text-left block">
                       {" "}
                       Email Address
                     </span>
@@ -82,13 +82,13 @@ export default function Login() {
                     value={email}
                     onChange={handleEmailChange}
                     required
-                    className=" font-sans bg-slate-100 mt-3 mb-3 w-full p-1 pl-4 rounded-lg "
+                    class=" font-sans bg-slate-100 mt-3 mb-3 w-full p-1 pl-4 rounded-lg "
                   />
                 </div>
 
-                <div className={styles.formGroup}>
-                  <label htmlFor="password" className={styles.label}>
-                    <span className="font-sans text-black font-normal leading-5 tracking-normal text-left block">
+                <div>
+                  <label htmlFor="password">
+                    <span class="font-sans text-black font-normal leading-5 tracking-normal text-left block">
                       {" "}
                       Password
                     </span>
@@ -98,24 +98,24 @@ export default function Login() {
                     id="password"
                     value={password}
                     onChange={handlePasswordChange}
-                    className="bg-slate-100 mt-3 mb-3 w-full p-1 pl-4  rounded-lg font-sans "
+                    class="bg-slate-100 mt-3 mb-3 w-full p-1 pl-4  rounded-lg font-sans "
                   />
                 </div>
-                <span className="text-blue-700 font-sans block mt-3 mb-3">
+                <span class="text-blue-700 font-sans block mt-3 mb-3">
                   Forgot Password?
                 </span>
                 <button
                   type="submit"
-                  className="font-sans1 text-white font-bold leading-5 tracking-normal text-center p-2  rounded-lg w-full bg-black"
+                  class="font-sans1 text-white font-bold leading-5 tracking-normal text-center p-2  rounded-lg w-full bg-black"
                 >
                   sign in
                 </button>
               </form>
             </div>
-            <div className="font-sans text-black font-normal leading-5 tracking-normal text-center m-5">
+            <div class="font-sans text-black font-normal leading-5 tracking-normal text-center m-5">
               <p>
                 Don’t have an account?{" "}
-                <span className="text-blue-700">Register here</span>
+                <span class="text-blue-700">Register here</span>
               </p>
             </div>
           </div>
