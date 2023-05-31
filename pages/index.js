@@ -29,7 +29,7 @@ export default function Home() {
         </Head>
 
         <main>
-          <div className="flex h-screen ">
+          <div class="flex h-screen ">
             <Sidebar />
             <Dashboard />
           </div>
