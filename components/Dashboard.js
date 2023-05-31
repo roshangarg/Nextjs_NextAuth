@@ -152,7 +152,7 @@ const Dashboard = () => {
               width="30px"
               height="22px"
               class="rounded-full"
-              // src={session.user.image}
+              src={session.user.image}
               onClick={() => signOut()}
             />
           </div>
